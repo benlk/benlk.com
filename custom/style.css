@@ -1,4 +1,13 @@
 /* custom css */
+/*
+	Based on Simple Dark by Chris Reynolds (hello@chrisreynolds.io)
+	https://gist.github.com/jazzsequence/5162736
+	
+	Based on Simple by Jason Schuller/Circa75
+	https://github.com/circa75/dropplets/tree/master/templates/simple
+*/
+
+
 @import url(../style.css); /* call the parent css */
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
 @import url("https://fonts.googleapis.com/css?family=Gudea:400,400italic|Oswald");
@@ -47,6 +56,10 @@ h1, h2, h3, h4, h5, h6 {
 a, .post p a {
 	color: #000;
 	border-bottom-color: #59acf3;
+}
+
+a img {
+	border: none;
 }
 a:hover, a:active,
 .post p a:hover, .post p a:active {
@@ -236,7 +249,6 @@ ul.actions li {
     list-style: none;
 }
 
-/*.button {
-	background-color: #404040;
-	border-color: #282b3d;
-}*/
+.button {
+	border-radius: 0px;
+}
