@@ -1,12 +1,13 @@
 # A Custom Theme for Dropplets
 
-This theme is a fork of [Jason Schuller][]'s `simple 1.0.1` theme that is packaged with [Dropplets][], incorporating some code from [Simple Dark][] by [Chris Reynolds][].
+This theme is a single-author fork of [Jason Schuller][]'s `simple 1.0.1` theme that is packaged with [Dropplets][], incorporating some code from [Simple Dark][] by [Chris Reynolds][].
 
 ## Features:
 
 * Square post thumbnails
 * Intro in a separately-styled <header> tag
-* 
+* Square buttons
+* No per-post author in posts list
 
 Efforts have been made to attribute code where possible. 
 

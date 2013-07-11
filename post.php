@@ -8,7 +8,7 @@
             <ul>
                 <li>Written by <?php echo $author ?></li>
                 <li><?php echo $published_date ?></li>
-                <li>About <?php echo $post_category ?></li>
+                <li><?php echo $post_category ?></li>
                 <li></li>
             </ul>
         </div>

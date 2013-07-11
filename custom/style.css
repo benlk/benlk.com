@@ -152,6 +152,7 @@ header {
 	background: #555555; /* Old browsers */
 	background-image: url("./nasty_fabric.png");
 	color: #eee;
+	text-shadow: 0px 0px 15px #000000;
 }
 
 header h1, 
