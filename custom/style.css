@@ -1,0 +1,199 @@
+/* custom css */
+@import url(../style.css); /* call the parent css */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600)
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 25px;
+	color: #404040;
+	text-rendering: optimizeLegibility;
+}
+
+p {
+	margin: 0 0 20px;
+}
+
+p + p {
+	text-indent: 0;
+}
+
+h1 {
+	font-size: 34px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #000;
+	margin: 0 0 20px;
+}
+
+a, .post p a {
+	color: #000;
+	border-bottom-color: #59acf3;
+}
+a:hover, a:active,
+.post p a:hover, .post p a:active {
+	color: #C5D2DD;
+}
+
+small {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+}
+
+code {
+	color: #ff4a14;
+}
+
+code, pre {
+	font-size: 12px;
+}
+
+pre code {
+	border: none;
+	padding: 0;
+	border-radius: 0;
+}
+
+pre {
+	max-width: 80%;
+	white-space: pre-wrap;
+	padding: 15px;
+	margin: 0 0 20px;
+	border: 1px dashed #bf370f;
+	border-radius: 7px
+}
+
+
+
+/*article {
+	border-bottom-color: #181921;
+}*/
+
+/*hr {
+	border: 1px solid #181921;
+	border-top: none;
+}*/
+
+/* Meta
+***********************************************************************/
+
+/* This is the logo at the top of every meta list */
+.thumbnail {
+	background-color: #3B3E4F;
+	border-color: #181921;
+}
+
+.meta ul {
+	border-right-color: #181921;
+}
+
+/* This is the dot at the end of the meta list*/
+.meta ul li:last-child {
+	background-color: #3B3E4F;
+	border-color: #181921;
+}
+
+.meta ul li:after {
+	color: #181921;
+}
+
+/* Intro 
+***********************************************************************/
+article.intro {
+	background: #555555; /* Old browsers */
+	background-image: url("./nasty_fabric.png");
+	color: #eee;
+}
+
+article.intro .meta {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 300;
+    color: #b3b3b1;
+    text-align: right;
+}
+
+article.intro .meta ul {
+    border-right: 1px solid #ebebeb;
+    width: 100%;
+    float: right;
+    margin-right: 14px;
+    padding: 20px 0 26px;
+    position: relative;
+}
+
+article.intro .meta ul li {
+    list-style: none;
+}
+
+article.intro .meta ul li span {
+    color: #ebebeb;
+}
+
+article.intro .meta ul li:after { 
+    color: #ebebeb;
+    content: " -";
+}
+
+article.intro .meta ul li:last-child { 
+    border-radius: 50%;
+    background-color: #fbfbfb;
+    border: 1px solid #ebebeb;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -6px;
+    bottom: -6px;
+}
+
+article.intro .meta ul li:last-child:after { 
+    content:"";
+}
+
+article.intro .meta ul li:first-child { 
+    font-weight: 400;
+}
+
+article.intro .meta a {
+    color: #b3b3b1;
+}
+
+article.intro .meta a:hover {
+    color: #303030;
+}
+
+article.intro .thumbnail {
+    background-color: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    float: right;
+    margin-right: -21px;
+    -moz-transition-duration: 0.05s;
+    -webkit-transition-duration: 0.05s;
+}
+
+
+/* Buttons 
+***********************************************************************/
+ul.actions li {
+    display: inline;
+    float: left;
+    margin-top: 3px;
+    list-style: none;
+}
+
+/*.button {
+	background-color: #3B3E4F;
+	border-color: #282b3d;
+}*/
