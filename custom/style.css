@@ -1,6 +1,7 @@
 /* custom css */
 @import url(../style.css); /* call the parent css */
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600")
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Gudea:400,400italic|Oswald");
 
 /* Typography
 ***********************************************************************/
@@ -15,7 +16,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
+	font-family: 'Oswald', 'Garamond', 'Georgia', sans-serif ; 
+    font-weight: 400;
 	color: #303030;
 	margin-bottom: 5px;
 	max-width: 90%;
@@ -38,7 +40,6 @@ h2 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Source Sans Pro', sans-serif;
 	color: #000;
 	margin: 0 0 20px;
 }
@@ -146,7 +147,7 @@ header h3,
 header h4, 
 header h5, 
 header h6 {
-    font-weight: 700;
+    font-weight: 400;
 	color: #ff4a14;
 	margin-bottom: 5px;
 	max-width: 90%;
