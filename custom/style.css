@@ -145,6 +145,21 @@ pre {
 	color: #202020;
 }
 
+/* Buttons 
+***********************************************************************/
+ul.actions li {
+	width: auto;
+	margin-left: 5px;
+    display: inline;
+    float: left;
+    margin-top: 3px;
+    list-style: none;
+}
+
+.button {
+	border-radius: 0px;
+}
+
 
 /* Intro 
 ***********************************************************************/
@@ -239,17 +254,4 @@ header .thumbnail {
 }
 
 
-/* Buttons 
-***********************************************************************/
-ul.actions li {
-	width: auto;
-	margin-left: 5px;
-    display: inline;
-    float: left;
-    margin-top: 3px;
-    list-style: none;
-}
 
-.button {
-	border-radius: 0px;
-}
