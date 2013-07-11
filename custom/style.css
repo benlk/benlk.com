@@ -2,6 +2,9 @@
 @import url(../style.css); /* call the parent css */
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600)
 
+/* Typography
+***********************************************************************/
+
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
@@ -9,6 +12,13 @@ body {
 	line-height: 25px;
 	color: #404040;
 	text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+	color: #303030;
+	margin-bottom: 5px;
+	max-width: 90%;
 }
 
 p {
@@ -52,13 +62,14 @@ code {
 }
 
 code, pre {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 pre code {
 	border: none;
 	padding: 0;
 	border-radius: 0;
+	font-size: 12px;
 }
 
 pre {
@@ -73,11 +84,11 @@ pre {
 
 
 /*article {
-	border-bottom-color: #181921;
+	border-bottom-color: #202020;
 }*/
 
 /*hr {
-	border: 1px solid #181921;
+	border: 1px solid #202020;
 	border-top: none;
 }*/
 
@@ -86,22 +97,22 @@ pre {
 
 /* This is the logo at the top of every meta list */
 .thumbnail {
-	background-color: #3B3E4F;
-	border-color: #181921;
+	background-color: #404040;
+	border-color: #202020;
 }
 
 .meta ul {
-	border-right-color: #181921;
+	border-right-color: #202020;
 }
 
 /* This is the dot at the end of the meta list*/
 .meta ul li:last-child {
-	background-color: #3B3E4F;
-	border-color: #181921;
+	background-color: #404040;
+	border-color: #202020;
 }
 
 .meta ul li:after {
-	color: #181921;
+	color: #202020;
 }
 
 /* Intro 
@@ -110,6 +121,18 @@ header {
 	background: #555555; /* Old browsers */
 	background-image: url("./nasty_fabric.png");
 	color: #eee;
+}
+
+header h1, 
+header h2, 
+header h3, 
+header h4, 
+header h5, 
+header h6 {
+    font-weight: 700;
+	color: #ff4a14;
+	margin-bottom: 5px;
+	max-width: 90%;
 }
 
 header .meta {
@@ -187,6 +210,8 @@ header .thumbnail {
 /* Buttons 
 ***********************************************************************/
 ul.actions li {
+	width: auto;
+	margin-left: 5px;
     display: inline;
     float: left;
     margin-top: 3px;
@@ -194,6 +219,6 @@ ul.actions li {
 }
 
 /*.button {
-	background-color: #3B3E4F;
+	background-color: #404040;
 	border-color: #282b3d;
 }*/
