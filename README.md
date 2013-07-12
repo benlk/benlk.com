@@ -8,6 +8,36 @@ This theme is a single-author fork of [Jason Schuller][]'s `simple 1.0.1` theme 
 * Intro in a separately-styled <header> tag
 * Square buttons
 * No per-post author in posts list
+* Formatting for `aside` posts (depends on benlk/dropplets/custom-posts)
+
+### Custom post types:
+
+Post types are set in the header. Currently supported are:
+
+* `draft`
+    * Hidden using `display: none;`
+* `published`
+    * Square post thumbnail
+    * Supports all markdown that Dropplets supports
+* `feature`
+    * White background for content
+    * Background image defined in `custom/style.css`
+    * But seriously, use this as a template to make your own feature posts
+* `aside`
+    * No thumbnail or decoration on post meta
+    * No post headline on front page
+    * No "Continue Reading" button on front page
+    * No way to access the post itself at all.
+    * It's just one paragraph, or blockquote, or image on the front page.
+    
+Post types are set by changing the post status:
+
+    # Post title 
+    - Post author
+    - Post author's twitter @
+    - YYYY-MM-DD
+    - category
+    - draft/published/feature/aside
 
 Efforts have been made to attribute code where possible. 
 
