@@ -1,4 +1,4 @@
-<article class="single">
+<article class="<?php echo $post_status ?>">
     <div class="row">
         <div class="one-quarter meta">
             <div class="thumbnail">
@@ -16,14 +16,17 @@
         <div class="three-quarters post">
             <?php echo $post ?>
                                 
-            <ul class="actions">
-                <li><a class="button" href="https://twitter.com/intent/tweet?screen_name=<?php echo $twitter ?>&text=Re:%20<?php echo $post_link ?>%20" data-dnt="true">Comment on Twitter</a></li>
-                <li><a class="button" href="https://twitter.com/intent/tweet?text=&quot;<?php echo $post_title ?>&quot;%20<?php echo $post_link ?>%20via%20&#64;<?php echo $twitter ?>" data-dnt="true">Share on Twitter</a></li>
-                <li><a class="button" href="<?php echo $site_url ?>">More Articles</a></li>
-            </ul>
+            <div class="post-actions"></div>
+                <ul class="actions">
+                    <li><a class="button" href="https://twitter.com/intent/tweet?screen_name=<?php echo $twitter ?>&text=Re:%20<?php echo $post_link ?>%20" data-dnt="true">Comment on Twitter</a></li>
+                    <li><a class="button" href="https://twitter.com/intent/tweet?text=&quot;<?php echo $post_title ?>&quot;%20<?php echo $post_link ?>%20via%20&#64;<?php echo $twitter ?>" data-dnt="true">Share on Twitter</a></li>
+                    <li><a class="button" href="<?php echo $site_url ?>">More Articles</a></li>
+                </ul>
+            </div>
             
             <?php
                 /* do twitter comments stuff */
+                /* includes div .comments */
                 include('comments.php');
             ?>
 

@@ -154,6 +154,7 @@ ul.actions li {
     float: left;
     margin-top: 3px;
     list-style: none;
+    
 }
 
 .button {
@@ -253,5 +254,98 @@ header .thumbnail {
     -webkit-transition-duration: 0.05s;
 }
 
+header .post ul {
+	margin-left: 0px;
+}
 
+header .post ul li {
+	width: auto;
+	margin-right: 5px;
+	margin-top: 3px;
+    display: inline;
+    float: left;
+    border: 1px solid #ebebeb;
+    list-style: none;
+	color: #ebebeb;
+	font-size: 14px;
+    line-height: 24px;
+    border-radius: 0px;
+    float: left;
+    padding: 8px 20px 9px;
+}
 
+header .post ul li a {
+	color: #ebebeb;
+}
+
+header .post ul li:hover {
+	border: 1px solid #303030;
+	color: #303030;
+}
+
+/* Feature
+***********************************************************************/
+
+.feature {
+	background: url("./squairy_light.png") #ffffff repeat;
+}
+
+.feature .post {
+	background-color: #ffffff;
+}
+
+.feature .thumbnail {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 0%;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    float: right;
+    margin-right: -21px;
+    -moz-transition-duration: 0.05s;
+    -webkit-transition-duration: 0.05s;
+}
+
+/* Aside
+***********************************************************************/
+
+article.aside {
+    width: 100%;
+    border-bottom: 0px solid #f1f1f1;
+    padding: 30px 0 0 0;
+}
+
+.aside .thumbnail{
+	display: none;
+}
+
+.aside .meta ul li:last-child {
+	display: none;
+}
+
+.aside .frontpage h2 {
+	display: none;
+}
+
+.aside .meta ul {
+	border-right-color: #909090;
+	width: 100%;
+	float: right;
+	margin-right: 14px;
+	padding: 0px 0 0px;
+	position: relative;
+}
+
+.aside .frontpage .post-intro {
+	float: left;
+	clear: none;
+}
+.aside .frontpage .post-actions {
+	display: none;
+	float: left;
+	clear: none;
+}
+.aside .frontpage .post-actions .actions li {
+	
+}

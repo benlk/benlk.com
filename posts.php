@@ -1,5 +1,5 @@
 <article class="<?php echo $post_status ?>">
-    <div class="row">
+    <div class="row frontpage">
         <div class="one-quarter meta">
             <div class="thumbnail">
                 <img src="<?php echo $post_image ?>" alt="<?php echo $post_title ?>" />
@@ -13,16 +13,23 @@
         </div>
 
         <div class="three-quarters post">
-            <h2><a href="<?php echo $post_link ?>"><?php echo $post_title ?></a></h2>
+            <div class="post-headline">
+                <h2><a href="<?php echo $post_link ?>"><?php echo $post_title ?></a></h2>
+            </div>
 
-            <?php echo $post_intro ?>
+            <div class="post-intro">
+                <?php echo $post_intro ?>
+            </div>
+            
 
-            <ul class="actions">
-                <li><a class="button" href="<?php echo $post_link ?>">Continue Reading</a></li>
-                <?php if ($category) { ?>
-                <li><a class="button" href="<?php echo $blog_url ?>">More Articles</a></li>
-                <?php } ?>
-            </ul>
+            <div class="post-actions">
+                <ul class="actions">
+                    <li><a class="button" href="<?php echo $post_link ?>">Continue Reading</a></li>
+                    <?php if ($category) { ?>
+                    <li><a class="button" href="<?php echo $blog_url ?>">More Articles</a></li>
+                    <?php } ?>
+                </ul>
+            </div>  
         </div>
     </div>
 </article>

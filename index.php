@@ -17,7 +17,7 @@
 
         <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
 
-        <link rel="shortcut icon" href="<?php echo $blog_url ?>/dropplets/style/images/favicon.png">
+        <link rel="shortcut icon" href="<?php echo $template_dir_url ?>custom/favicon.png">
 
         <?php echo stripslashes($header_inject) ?>
     </head>
