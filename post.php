@@ -6,7 +6,7 @@
             </div>
             
             <ul>
-                <li>Written by <?php echo $author ?></li>
+                <li>Written by <?php echo $post_author ?></li>
                 <li><?php echo $published_date ?></li>
                 <li><?php echo $post_category ?></li>
                 <li></li>
