@@ -182,6 +182,7 @@ ul.actions li {
     float: left;
     margin-top: 3px;
     list-style: none;
+    white-space: nowrap;
 }
 
 /* Meta
