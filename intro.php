@@ -17,15 +17,12 @@
             <h2><?php echo $intro_title ?></h2>
 
             <p><?php echo $intro_text ?></p>
-			<p>
-				<ul class="links">
-				<!-- set manually in intro.php, because $intro_text doesn't have Markdown support yet-->
-					<a href="http://resume.benlk.com/"><li>Resume</li></a>
-					<a href="https://github.com/benlk/"><li>GitHub</li></a>
-					<a href="https://secure.flickr.com/photos/benlk"><li>Flickr</li></a>
-					<a href="https://twitter.com/benlkeith"><li>Twitter</li></a>
-				</ul>
-			</p>
+
+			<?php
+				include "custom/intro-buttons.php"
+				// These are if you want to put some buttons in your header.
+			?>
+
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
     </div>
