@@ -1,21 +1,22 @@
 # A Custom Theme for Dropplets
 
-This theme is a single-author fork of [Jason Schuller][]'s `simple 1.0.1` theme that is packaged with [Dropplets][], incorporating some code from [Simple Dark][] by [Chris Reynolds][].
+This theme is a single-author fork of [Jason Schuller][]'s `simple` theme that is packaged with [Dropplets 1.5][], incorporating some code from [Simple Dark][] by [Chris Reynolds][].
 
 ## Features:
 
 * Square post thumbnails
-* Intro in a separately-styled <header> tag
+* Intro uses a separately-styled <header> tag
+* Optional buttons in the intro
 * Square buttons
 * No per-post author in posts list
 * Formatting for `aside` posts (depends on benlk/dropplets/custom-posts)
 
-### Custom post types:
+### Custom post types
 
 Post types are set in the header. Currently supported are:
 
 * `draft`
-    * Hidden using `display: none;`
+    * Hidden by Dropplets
 * `published`
     * Square post thumbnail
     * Supports all markdown that Dropplets supports
@@ -27,8 +28,8 @@ Post types are set in the header. Currently supported are:
     * No thumbnail or decoration on post meta
     * No post headline on front page
     * No "Continue Reading" button on front page
-    * No way to access the post itself at all.
-    * It's just one paragraph, or blockquote, or image on the front page.
+    * No way to access the post itself at all
+    * It's just one paragraph, or blockquote, or image on the front page
     
 Post types are set by changing the post status:
 
@@ -38,6 +39,18 @@ Post types are set by changing the post status:
     - YYYY-MM-DD
     - category
     - draft/published/feature/aside
+    
+### Intro buttons 
+
+Buttons that go in the intro. See `custom/intro-buttons.php`. Leave the file blank after `?>` for no buttons. 
+
+## Version History
+
+1.2: Updated for Dropplets 1.5 compatibility.
+1.1: Added custom post functionality.
+1.0: Initial modifications off of `Simple` and `Simple-Dark`.
+
+## Attribution and Licenses
 
 Efforts have been made to attribute code where possible. 
 
