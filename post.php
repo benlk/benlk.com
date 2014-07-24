@@ -1,15 +1,11 @@
 <article class="single <?php echo($post_status); ?>">
     <div class="row">
         <div class="one-quarter meta">
-            <div class="thumbnail">
-                <img src="<?php echo($post_image); ?>" alt="<?php echo($post_title); ?>" />
-            </div>
 
             <ul>
                 <li>Written by <?php echo($post_author); ?></li>
                 <li><?php echo($published_date); ?></li>
                 <li>About <a href="<?php echo($post_category_link); ?>"><?php echo($post_category); ?></a></li>
-                <li></li>
             </ul>
         </div>
 

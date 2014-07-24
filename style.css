@@ -202,7 +202,6 @@ ul.actions li {
     width: 100%;
     float: right;
     margin-right: 14px;
-    padding: 20px 0 26px;
     position: relative;
 }
 
@@ -212,26 +211,6 @@ ul.actions li {
 
 .meta ul li span {
     color: #ebebeb;
-}
-
-.meta ul li:after { 
-    color: #ebebeb;
-    content: " -";
-}
-
-.meta ul li:last-child { 
-    border-radius: 50%;
-    background-color: #fbfbfb;
-    border: 1px solid #ebebeb;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    right: -6px;
-    bottom: -6px;
-}
-
-.meta ul li:last-child:after { 
-    content:"";
 }
 
 .meta ul li:first-child { 
