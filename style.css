@@ -8,27 +8,7 @@ Copyright Circa75 Media, LLC (Circa75.co)
 /* Normalization
 *********************************************************************************************/
 
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
-	margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;
-	}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
-	display:block
-	}
-body{
-	line-height:1
-	}
-ol,ul{
-	list-style:none
-	}
-blockquote,q{
-	quotes:none
-	}
-blockquote:before,blockquote:after,q:before,q:after{
-	content:'';content:none;
-	}
-table{
-	border-collapse:collapse;border-spacing:0;
-	}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}
 
 /* Setup
 *********************************************************************************************/
@@ -108,7 +88,7 @@ code, pre {
 /* Posts
 *********************************************************************************************/
 
-article,header {
+article, header {
     width: 100%;
     border-bottom: 1px solid #f1f1f1;
     padding: 60px 0;
@@ -119,7 +99,7 @@ article.draft {
 }
 
 article:last-child,
-article.single, {
+article.single {
     border-bottom: 0;
 }
 
@@ -143,10 +123,6 @@ article.single, {
 .post blockquote p {  
     color: #666;
     max-width: 460px;
-}
-
-.post ul:nth-child(2) {
-    display: none;
 }
 
 .post p a,
@@ -282,6 +258,11 @@ ul.actions li {
     -webkit-transition-duration: 0.05s;
 }
 
+.not-found .thumbnail {
+    background-color: #404040;
+    border-color: #404040;
+}
+
 .thumbnail img {
     border-radius: 50%;
     width: 100%;
@@ -317,13 +298,11 @@ ul.actions li {
     margin: 5px 5px 0 -2px;
 }
 
-/* XL
-*********************************************************************************************/
+/* XL */
 
 @media (max-width: 980px) {
 
-    /* Buttons
-    *****************************************************************************************/
+    /* Buttons */
     
     .button {
         font-size: 12px;
@@ -342,21 +321,18 @@ ul.actions li {
     
 }
 
-/* L
-*********************************************************************************************/
+/* L */
 
 @media (max-width: 820px) {
     
-    /* Setup
-    *****************************************************************************************/
+    /* Setup */
     
     body {
     	font-size: 14px;
     	line-height: 23px;
     }
     
-    /* Typography
-    *****************************************************************************************/
+    /* Typography */
     
     h1, h2 { 
         font-size: 18px;
@@ -379,15 +355,13 @@ ul.actions li {
 
 @media (max-width: 640px) {
 
-    /* Meta
-    *****************************************************************************************/
+    /* Meta */
     
     .meta {
         display: none;
     }
     
-    /* Posts
-    *****************************************************************************************/
+    /* Posts */
     
     .post p, 
     .post ul, 
@@ -397,15 +371,13 @@ ul.actions li {
     
 }
 
-/* XS
-*********************************************************************************************/
+/* XS */
 
 @media (max-width: 400px) {
     
-    /* Articles
-    *****************************************************************************************/
+    /* Articles */
     
-    article,header {
+    article, header {
         padding: 40px 0;
     }
     
