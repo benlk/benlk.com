@@ -3,7 +3,7 @@
         <div class="one-quarter meta">
 
             <ul>
-                <li>Written by <?php echo($post_author); ?></li>
+                <li>Written by <a href="<?php echo($blog_url); ?>"><?php echo($post_author); ?></a></li>
                 <li><?php echo($published_date); ?></li>
                 <li>About <a href="<?php echo($post_category_link); ?>"><?php echo($post_category); ?></a></li>
             </ul>
