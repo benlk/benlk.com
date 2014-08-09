@@ -84,6 +84,18 @@ code, pre {
     letter-spacing: 0.1em;
     margin: 0 0.1em;
 }
+sup {
+  vertical-align: super;
+  font-size: 0.75em;
+}
+sup a {
+  text-decoration: none;
+  border-bottom: none;
+}
+sub {
+  vertical-align: sub;
+  font-size: 0.75em;
+}
 
 /* Posts
 *********************************************************************************************/
