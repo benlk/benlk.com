@@ -112,6 +112,9 @@ pre {
 	clear: both;
 }
 
+#dp-dropplets-icon {
+  display: none;
+}
 /*article {
 	border-bottom-color: #202020;
 }*/
@@ -146,19 +149,10 @@ pre {
 }
 
 .meta ul {
-	border-right-color: #202020;
+	border: none;
 }
 
 /* This is the dot at the end of the meta list*/
-.meta ul li:last-child {
-	background-color: #404040;
-	border-color: #202020;
-	border-radius: 0%;
-}
-
-.meta ul li:after {
-	color: #202020;
-}
 
 /* Buttons 
 ***********************************************************************/
@@ -208,11 +202,10 @@ header .meta {
 }
 
 header .meta ul {
-    border-right: 1px solid #ebebeb;
+    border: none;
     width: 100%;
     float: right;
     margin-right: 14px;
-    padding: 20px 0 26px;
     position: relative;
 }
 
@@ -222,26 +215,6 @@ header .meta ul li {
 
 header .meta ul li span {
     color: #ebebeb;
-}
-
-header .meta ul li:after { 
-    color: #ebebeb;
-    content: " -";
-}
-
-header .meta ul li:last-child { 
-    border-radius: 0%;
-    background-color: #fbfbfb;
-    border: 1px solid #ebebeb;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    right: -6px;
-    bottom: -6px;
-}
-
-header .meta ul li:last-child:after { 
-    content:"";
 }
 
 header .meta ul li:first-child { 
@@ -352,19 +325,15 @@ article.aside {
 	position: relative;
 }
 
-.aside .meta ul li:after {
-	color: transparent;
-}
-
-.aside .frontpage .post-intro {
+.aside .post-intro {
 	float: left;
 	clear: none;
 }
-.aside .frontpage .post-actions {
+.aside .actions {
 	display: none;
 	float: left;
 	clear: none;
 }
-.aside .frontpage .post-actions .actions li {
+.aside .actions li {
 	
 }
