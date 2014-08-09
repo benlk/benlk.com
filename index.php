@@ -19,11 +19,12 @@
     </head>
 
     <body>
-        <?php
-				if($is_home) {
-          include("intro.php");
-        }
-echo($content);
-get_footer(); ?>
+		<?php
+			if($is_home) {
+				include("intro.php");
+			}
+			echo($content);
+			get_footer(); 
+		?>
     </body>
 </html>
