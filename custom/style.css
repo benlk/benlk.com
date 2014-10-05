@@ -188,11 +188,31 @@ ul.actions .button {
 	color: #555;
 	float: left;
 	margin: 0 5px 10px 0;
-	padding: 8px 20px 9px;
+	padding: 8px 20px 8px;
 	white-space: nowrap;
+	position: relative;
 }
+/*ul.actions .button:after{
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	box-shadow: 0px 0px 10px #000;
+	border-top: 21px transparent solid;
+	border-bottom: 20px transparent solid;
+	border-left: 22px #f7f7f7 solid;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	left: 100%;
+	z-index: 2;
+}*/
 article:not(.single) ul.actions li {
 	float: right;
+}
+article.single ul.actions .button:after {
+	border: none;
+	display: none;
 }
 
 .button {
