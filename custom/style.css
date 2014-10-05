@@ -165,6 +165,10 @@ pre {
 
 /* Buttons 
 ***********************************************************************/
+ul.actions {
+	width: 100%;
+	max-width: 100%;
+}
 ul.actions li {
 	width: auto;
 	margin-left: 5px;
@@ -172,7 +176,23 @@ ul.actions li {
     float: left;
     margin-top: 3px;
     list-style: none;
-    
+}
+ul.actions .button {
+	background-color: #f7f7f7;
+	border: 1px solid #ddd;
+	border-bottom: 2px solid #ccc;
+	border-radius: 3px;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: 300;
+	color: #555;
+	float: left;
+	margin: 0 5px 10px 0;
+	padding: 8px 20px 9px;
+	white-space: nowrap;
+}
+article:not(.single) ul.actions li {
+	float: right;
 }
 
 .button {
