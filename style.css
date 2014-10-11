@@ -107,8 +107,9 @@ span.big sup {
 a { 
     color: #303030;
     text-decoration: none;
-    -moz-transition-duration: 0.1s;
-    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
 }
 
 a:hover, a:focus { 
