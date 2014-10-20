@@ -11,8 +11,6 @@
         <!-- Theme Styles -->
         <link rel="stylesheet" href="<?php echo($template_dir_url); ?>custom/style.css">
         <link rel="stylesheet" href="<?php echo($template_dir_url); ?>subdiv.css">
-        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
 		
 		<link rel="icon" type="img/png" href="custom/favicon.png" />
 

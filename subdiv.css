@@ -83,48 +83,15 @@
 @media (max-width: 640px) {
 
     .row {
-        width: 480px;
+        width: 100%;
     }
     
     .row .one-quarter,
     .row .three-quarters {
-        width: 440px;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     
 }
 
-/* S */
-
-@media (max-width: 520px) {
-    
-    .row {
-        width: 360px;
-    }
-    
-    .row .one-quarter,
-    .row .three-quarters {
-        width: 320px;
-    }
-    
-}
-
-/* XS */
-
-@media (max-width: 400px) {
-    
-    .row .one-quarter,
-    .row .three-quarters {
-        padding: 0;
-    }
-    
-    
-    .row {
-        width: 240px;
-    }
-    
-    .row .one-quarter,
-    .row .three-quarters {
-        width: 240px;
-    }
-    
-}
