@@ -9,7 +9,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Theme Styles -->
-        <link rel="stylesheet" href="<?php echo($template_dir_url); ?>custom/style.css">
+        <link rel="stylesheet" href="<?php echo($template_dir_url); ?>custom/custom.css">
         <link rel="stylesheet" href="<?php echo($template_dir_url); ?>subdiv.css">
 		
 		<link rel="icon" type="img/png" href="custom/favicon.png" />
