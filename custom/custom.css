@@ -245,7 +245,7 @@ article.single ul.actions .button:after {
 ***********************************************************************/
 header {
 	background: #111; /* Old browsers */
-	background-image: url("./dark_wood.png");
+	/*background-image: url("./dark_wood.png");*/
 	color: #eee;
 	text-shadow: 0px 0px 15px #000000;
 }
