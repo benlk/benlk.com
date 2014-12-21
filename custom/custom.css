@@ -396,6 +396,16 @@ header .post ul li:hover {
 @media (max-width: 640px) {
 }
 
+div.noscript {
+  color: #500;
+  background-color: #FDD;
+  border-radius: 10px;
+  border-color: #500;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+}
+
 /* Aside
 ***********************************************************************/
 
