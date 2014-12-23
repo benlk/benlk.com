@@ -1,0 +1,7 @@
+
+*~	# files ending in ~ are usually the temp-files of texteditors
+*.swp	# files ending in .swp are usually the temp-files of texteditors
+*.zip	# No need to version-control these
+*.komodoproject
+
+journal.txt	# Dev journal
