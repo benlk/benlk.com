@@ -1,6 +1,6 @@
 # A Custom Theme for Dropplets
 
-This theme is a single-author fork of [Jason Schuller][]'s `simple` theme that is packaged with [Dropplets 1.5][], incorporating some code from [Simple Dark][] by [Chris Reynolds][].
+This theme is a single-author fork of [Jason Schuller][]'s `simple` theme that is packaged with [Dropplets][], incorporating some code from [Simple Dark][] by [Chris Reynolds][].
 
 ## Features:
 
@@ -54,7 +54,7 @@ Buttons that go in the intro. See `custom/intro-buttons.php`. Leave the file bla
 
 Efforts have been made to attribute code where possible. 
 
-`/custom/style.css` is the modified stylesheet, including some formatting taken from [Simple Dark][]
+`/custom/custom.css` is the modified stylesheet, including some formatting taken from [Simple Dark][]
 
 `/style.css` is the original file distributed with Dropplets, and is copyright Circa75 Media, LLC. It is included here for ease of use. [Circa75's Media's license][] on the `simple` theme is as follows:
 
