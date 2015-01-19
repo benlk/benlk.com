@@ -119,14 +119,6 @@ pre {
 #dp-dropplets-icon {
   display: none;
 }
-/*article {
-	border-bottom-color: #202020;
-}*/
-
-/*hr {
-	border: 1px solid #202020;
-	border-top: none;
-}*/
 
 /* Meta
 ***********************************************************************/
@@ -172,62 +164,81 @@ ul.actions {
 }
 ul.actions li {
 	width: auto;
-	margin-left: 5px;
+	margin-right: 5px;
     display: inline;
     float: left;
     margin-top: 3px;
     list-style: none;
 }
 ul.actions .button {
-	background-color: #f7f7f7;
 	border: 1px solid #ddd;
-	border-bottom: 2px solid #ccc;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #ccc;
 	border-radius: 3px;
 	font-size: 12px;
 	line-height: 24px;
 	font-weight: 300;
-	color: #555;
 	float: left;
 	margin: 0 5px 10px 0;
 	padding: 8px 20px 8px;
 	white-space: nowrap;
 	position: relative;
+    transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
 }
-ul.actions .button:hover {
-  color: #ff4a14;
-  border-color: #ff4a14;
+ul.actions .button:hover, ul.actions .button:focus {
+	color: #ff4a14;
+	border-color: #ff4a14;
 }
-ul.actions .button:after{
-	content: " ";
-	display: block;
-	width: 0;
-	height: 0;
-	/*box-shadow: 0px 0px 10px #000;*/
-	border-top: 21px transparent solid;
-	border-bottom: 20px transparent solid;
-	border-left: 22px transparent solid;
-	position: absolute;
-	top: 50%;
-	margin-top: -20px;
-	left: 100%;
-	z-index: 2;
+ul.actions .button:active {
+	color: #ff4a14;
+	border-color: #ff4a14;
+	border-bottom-width: 1px;
+	margin-top: 3px;
+	margin-bottom: 9px;
 }
-ul.actions.button:hover:after{
-  content: " ";
-  display: block;
-  width: 0;
-  height: 0;
-  /*box-shadow: 0px 0px 10px #000;*/
-  border-top: 21px transparent solid;
-  border-bottom: 20px transparent solid;
-  border-left: 22px #ff4a14 solid;
-  position: absolute;
-  top: 50%;
-  margin-top: -20px;
-  left: 100%;
-  z-index: 2;
-  border-left-color: ;
+
+header ul.actions .button {
+	background-color: inherit;
+	color: #ccc;
 }
+article ul.actions .button {
+	background-color: #ffffff;
+	color: #555;
+}
+/*ul.actions .button:after{*/
+/*	content: " ";*/
+/*	display: block;*/
+/*	width: 0;*/
+/*	height: 0;*/
+/*	/*box-shadow: 0px 0px 10px #000;*/*/
+/*	border-top: 21px transparent solid;*/
+/*	border-bottom: 20px transparent solid;*/
+/*	border-left: 22px transparent solid;*/
+/*	position: absolute;*/
+/*	top: 50%;*/
+/*	margin-top: -20px;*/
+/*	left: 100%;*/
+/*	z-index: 2;*/
+/*}*/
+/*ul.actions.button:hover:after{*/
+/*  content: " ";*/
+/*  display: block;*/
+/*  width: 0;*/
+/*  height: 0;*/
+/*  /*box-shadow: 0px 0px 10px #000;*/*/
+/*  border-top: 21px transparent solid;*/
+/*  border-bottom: 20px transparent solid;*/
+/*  border-left: 22px #ff4a14 solid;*/
+/*  position: absolute;*/
+/*  top: 50%;*/
+/*  margin-top: -20px;*/
+/*  left: 100%;*/
+/*  z-index: 2;*/
+/*  border-left-color: ;*/
+/*}*/
 article:not(.single) ul.actions li {
 	float: right;
 }
@@ -247,7 +258,6 @@ header {
 	background: #111; /* Old browsers */
 	/*background-image: url("./dark_wood.png");*/
 	color: #eee;
-	text-shadow: 0px 0px 15px #000000;
 }
 
 header h1, 
@@ -310,34 +320,35 @@ header .thumbnail {
     margin-right: -21px;
 }
 
-header .post ul {
-	margin-left: 0px;
-}
+/*header .post ul {*/
+/*	margin-left: 0px;*/
+/*}*/
 
-header .post li {
-	width: auto;
-	margin-right: 5px;
-	margin-top: 3px;
-    display: inline;
-    float: left;
-    border: 1px solid #ebebeb;
-    list-style: none;
-	color: #ebebeb;
-	font-size: 14px;
-    line-height: 20px;
-    border-radius: 0px;
-    float: left;
-    padding: 8px 15px 9px;
-}
+/*header .post li {*/
+/*	width: auto;*/
+/*	margin-right: 5px;*/
+/*	margin-top: 3px;*/
+/*    display: inline;*/
+/*    float: left;*/
+/*    border: 1px solid #ebebeb;*/
+/*    list-style: none;*/
+/*	color: #ebebeb;*/
+/*	font-size: 14px;*/
+/*    line-height: 20px;*/
+/*    border-radius: 0px;*/
+/*    float: left;*/
+/*    padding: 8px 15px 9px;*/
+/*}*/
 
 header .post a {
 	color: #ebebeb;
 }
-
-header .post ul li:hover {
-	border: 1px solid #777;
-	color: #777;
+/* General article
+***********************************************************************/
+article:nth-child(even) {
+	background-color: #fff7e0;
 }
+
 
 /* Feature
 ***********************************************************************/
@@ -412,7 +423,7 @@ div.noscript {
 article.aside {
     width: 100%;
     border-bottom: 1px solid #f1f1f1;
-    padding: 30px 0 0 0;
+    padding: 30px 0 10px 0;
 }
 
 .aside .thumbnail{
