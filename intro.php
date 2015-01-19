@@ -1,9 +1,7 @@
 <header class="intro">
     <div class="row">
         <div class="one-quarter meta">
-
             <ul>
-                <li><?php echo $blog_title ?></li>
                 <li><a href="mailto:<?php echo $blog_email ?>?subject=Hello"><?php echo $blog_email ?></a></li>
                 <li><a href="http://twitter.com/<?php echo $blog_twitter ?>">&#64;<?php echo $blog_twitter ?></a></li>
             </ul>
@@ -12,7 +10,7 @@
         <div class="three-quarters post">
             <h2><?php echo $intro_title ?></h2>
 
-            <p><?php echo $intro_text ?></p>
+            <?php echo markdown($intro_text); ?>
 
 			<?php
 				include "custom/intro-buttons.php"
