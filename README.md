@@ -48,10 +48,10 @@ Buttons that go in the intro. See `custom/intro-buttons.php`. Leave the file bla
 
 ## Version History
 
-1.3: Added Table of Contents functionality, more header partials, and improved CSS.
-1.2: Updated for Dropplets 1.5 compatibility.
-1.1: Added custom post functionality.
-1.0: Initial modifications off of `Simple` and `Simple-Dark`.
+- 1.3: Added Table of Contents functionality, more header partials, and improved CSS.
+- 1.2: Updated for Dropplets 1.5 compatibility.
+- 1.1: Added custom post functionality.
+- 1.0: Initial modifications off of `Simple` and `Simple-Dark`.
 
 ## Attribution and Licenses
 
