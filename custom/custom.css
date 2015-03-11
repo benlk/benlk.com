@@ -23,6 +23,10 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
+::selection {
+	background-color: #f3ac59;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Oswald', 'Garamond', 'Georgia', sans-serif ; 
     font-weight: 400;
@@ -171,7 +175,7 @@ hr {
 	width: 90%;
 	margin: 1.5em auto;
 	border-style: none;
-	border-bottom: 2px dotted #777;
+	border-bottom: 2px solid #777;
 }
 
 #disqus_thread {

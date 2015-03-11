@@ -13,17 +13,19 @@ This theme is a single-author fork of [Jason Schuller][]'s `simple` theme that i
 
 ### Custom post types
 
-Post types are set in the header. Currently supported are:
+Post types are set in the header. Posts can have multiple post types. Currently supported are:
 
 * `draft`
     * Hidden by Dropplets
 * `published`
     * Square post thumbnail
     * Supports all markdown that Dropplets supports
-* `feature`
-    * White background for content
-    * Background image defined in `custom/style.css`
-    * But seriously, use this as a template to make your own feature posts
+* `toc`
+	- Depends on replacing `dropplets/includes/Markdown.php` with the classic version of PHP Markdown Extra from https://michelf.ca/projects/php-markdown/
+	- Headlines within the post should use this markup: `# Headline { #id }` 
+	- Only headlines up to `h3`/`###` will be included in the Table of Contents.
+	- The TOC doesn't do nesting in the HTML, but it could be done in the CSS.
+	- Creates a Table of Contents div at the top of the post
 * `aside`
     * No thumbnail or decoration on post meta
     * No post headline on front page
@@ -46,6 +48,7 @@ Buttons that go in the intro. See `custom/intro-buttons.php`. Leave the file bla
 
 ## Version History
 
+1.3: Added Table of Contents functionality, more header partials, and improved CSS.
 1.2: Updated for Dropplets 1.5 compatibility.
 1.1: Added custom post functionality.
 1.0: Initial modifications off of `Simple` and `Simple-Dark`.
@@ -54,9 +57,11 @@ Buttons that go in the intro. See `custom/intro-buttons.php`. Leave the file bla
 
 Efforts have been made to attribute code where possible. 
 
+`post.php` incorporates a modified version of [Alex Freeman's AutoTOC function](http://www.10stripe.com/articles/automatically-generate-table-of-contents-php.php), which was released under CC-BY-SA 3.0. You are welcome to modify this function under the terms of the [Creative Commons Attribution Share Alike 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/)
+
 `/custom/custom.css` is the modified stylesheet, including some formatting taken from [Simple Dark][]
 
-`/style.css` is the original file distributed with Dropplets, and is copyright Circa75 Media, LLC. It is included here for ease of use. [Circa75's Media's license][] on the `simple` theme is as follows:
+`/style.css` is a carefully-kneecapped version of the original file distributed with Dropplets, and is copyright Circa75 Media, LLC. It is included here for ease of use. [Circa75's Media's license][] on the `simple` theme is as follows:
 
 > Copyright (c) 2013 Circa75 Media, LLC
 
