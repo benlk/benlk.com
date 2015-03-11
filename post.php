@@ -61,7 +61,7 @@ if (strpos($post_status, "toc") !== false ) {
             <ul class="actions left">
                 <li><a class="button" href="<?php echo($blog_url); ?>">⌫ More Articles</a></li>
                 <?php if ($toc) { ?>
-                <li><a class="button" href="#toc" title="Scroll to table of contents">&uarr;</a></li>
+                <li><a class="button tocbutton" href="#toc" title="Scroll to table of contents">&uarr;</a></li>
                 <?php } ?>
                 <li><a class="button" href="https://twitter.com/intent/tweet?text=&quot;<?php echo($post_title); ?>&quot;%20<?php echo($post_link); ?>%20via%20<?php echo($post_author_twitter); ?>" data-dnt="true">Tweet this! →</a></li>
                 
