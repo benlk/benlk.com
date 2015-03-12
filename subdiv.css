@@ -4,7 +4,7 @@
 .row {
     width: 1140px;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: visible;
     clear: both;
 }
 

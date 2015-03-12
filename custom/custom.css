@@ -396,6 +396,11 @@ article:nth-child(odd) {
 #toc li {
 	list-style-position: inside;
 }
+@media (min-width: 641px) {
+#toc {
+	margin-right: -10%;
+}
+}
 @media (max-width: 640px) {
 #toc {
 	float: none;
