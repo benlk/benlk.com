@@ -4,7 +4,7 @@
 .row {
     width: 1140px;
     margin: 0 auto;
-    overflow: visible;
+    overflow: hidden;
     clear: both;
 }
 
@@ -12,6 +12,7 @@
     float: left;
     min-height: 1px;
     margin: 0;
+    overflow: visible;
 }
 
 .row .one-quarter {
