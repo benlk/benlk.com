@@ -31,7 +31,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Oswald', 'Garamond', 'Georgia', sans-serif ; 
     font-weight: 400;
 	color: #303030;
-	max-width: 90%;
 }
 h1 {
 	font-size: 34px;
@@ -79,6 +78,7 @@ p {
 .post p {
 	max-width: 100%;
 	font-size: 16px;
+	position: relative;
 }
 p + p {
 	text-indent: 0;
@@ -303,14 +303,13 @@ header h6 {
     font-weight: 400;
 	color: #ff4a14;
 	margin-bottom: 5px;
-	max-width: 90%;
 }
 
 header .meta {
     font-size: 14px;
     line-height: 19px;
     font-weight: 300;
-    color: #b3b3b1;
+    color: #ccc;
 }
 
 header .meta ul {
@@ -327,7 +326,7 @@ header .meta ul li span {
     color: #ebebeb;
 }
 
-header .meta a {
+header a {
     color: #b3b3b1;
 }
 
@@ -377,7 +376,9 @@ header .actions {
 article:nth-child(odd) {
 	background-color: #fffbf1;
 }
-
+.intro.single {
+	text-align: center;
+}
 /*
  * Table of Contents styles
  */
@@ -396,9 +397,9 @@ article:nth-child(odd) {
 #toc li {
 	list-style-position: inside;
 }
-@media (min-width: 641px) {
+@media (min-width: 980px) {
 #toc {
-	margin-right: -10%;
+/*	margin-right: -10%;*/
 }
 }
 @media (max-width: 640px) {
