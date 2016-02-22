@@ -4,7 +4,6 @@ This theme is a single-author fork of [Jason Schuller][]'s `simple` theme that i
 
 ## Features:
 
-* Square post thumbnails
 * Intro uses a separately-styled <header> tag
 * Optional buttons in the intro
 * Square buttons
