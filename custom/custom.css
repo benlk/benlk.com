@@ -1,11 +1,12 @@
-/* custom css */
 /*
-  Based on Simple Dark by Chris Reynolds (hello@chrisreynolds.io)
-  https://gist.github.com/jazzsequence/5162736
-  
-  Based on Simple by Jason Schuller/Circa75
-  https://github.com/circa75/dropplets/tree/master/templates/simple
-*/
+ * Custom css for the benlk.com theme, by Ben Keith
+ *
+ * Originally based on Simple Dark by Chris Reynolds (hello@chrisreynolds.io)
+ * https://gist.github.com/jazzsequence/5162736
+ *
+ * Simple Dark was in turn based on Simple by Jason Schuller/Circa75
+ * https://github.com/circa75/dropplets/tree/master/templates/simple
+ */
 
 
 @import url(../style.css); /* call the parent css */
@@ -137,6 +138,7 @@ a:hover, a:active,
 small {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 12px;
+  font-variant: small-caps;
 }
 
 code {
@@ -144,22 +146,17 @@ code {
   font-family: "Ubuntu Mono", Courier, monospace;
 }
 
-code, pre {
-  font-size: 14px;
-}
-
 pre code {
   border: none;
   padding: 0;
   border-radius: 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 pre {
-  max-width: 80%;
   white-space: pre-wrap;
   padding: 15px;
-  margin: 0 0 20px;
+  margin: 0 2em 20px;
   border: 1px dashed #bf370f;
   border-radius: 7px
 }
@@ -325,6 +322,7 @@ header a {
   color: #b3b3b1;
 }
 
+header .meta a,
 header .meta a:hover {
   color: #ff4a14;
 }
