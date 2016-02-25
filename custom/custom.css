@@ -163,7 +163,7 @@ pre code::before {
   position: absolute;
   top: -40.5px;  /*-1.5 * 27px; // line-height times baseline line-height */
   left: -15px; /* the padding on the pre containing the code */
-  
+
 }
 pre code.html::before {
   content: "html";
@@ -361,32 +361,13 @@ header .thumbnail {
   margin-right: -21px;
 }
 
-/*header .post ul {*/
-/*  margin-left: 0px;*/
-/*}*/
-
-/*header .post li {*/
-/*  width: auto;*/
-/*  margin-right: 5px;*/
-/*  margin-top: 3px;*/
-/*  display: inline;*/
-/*  float: left;*/
-/*  border: 1px solid #ebebeb;*/
-/*  list-style: none;*/
-/*  color: #ebebeb;*/
-/*  font-size: 14px;*/
-/*  line-height: 20px;*/
-/*  border-radius: 0px;*/
-/*  float: left;*/
-/*  padding: 8px 15px 9px;*/
-/*}*/
-
 header .post a {
   color: #ebebeb;
 }
 header .actions {
   text-align: right;
 }
+
 /* General article
 ***********************************************************************/
 article:nth-child(odd) {
@@ -427,6 +408,38 @@ article:nth-child(odd) {
 }
 }
 
+/**
+ * Tufte CSS sidenotes
+ * numbered and to the left of the main column when not on mobile
+ * numbered and in the main column when mobile
+ * @link https://github.com/edwardtufte/tufte-css/blob/master/tufte.css#L168
+ */
+.sidenote, .marginnote {
+  float: left;
+  clear: left;
+  margin-left: -190px;  /* see subdiv.css, this should be the width of one column */
+  width: 160px;
+}
+.sidenote-number {
+  counter-increment: sidenote-counter;
+}
+.sidenote-number::after,
+.sidenote:before {
+  content: counter(sidenote-counter) " ";
+  font-family: inherit;
+  position: relative;
+  vertical-align: baseline;
+}
+.sidenote-number:after {
+  content: counter(sidenote-counter) " ";
+  font-size: 1em;
+  top: -0.5em;
+  left: 0.1em;
+}
+.sidenote:before {
+  content: counter(sidenote-counter) " ";
+  top: -0.5em;
+}
 /* Feature
 ***********************************************************************/
 
@@ -532,7 +545,6 @@ article.aside {
   clear: none;
 }
 .aside .actions li {
-  
 }
 @media (max-width: 640px) {
   article, header {
