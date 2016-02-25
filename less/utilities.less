@@ -2,13 +2,19 @@
 .left { text-align: left }
 .right { text-align: right }
 
-.clearfix,
 .clear {
   display: block;
   clear: both;
 }
+.clearfix {
+  &::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
 .noscript {
-  .clear;
+  .clearfix;
   color: #500;
   background-color: #FDD;
   border-radius: 10px;
