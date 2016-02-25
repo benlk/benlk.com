@@ -1,0 +1,76 @@
+article,
+header {
+  width: 100%;
+  border-bottom: 1px solid @lgray;
+  padding: @article_vpadding 0;
+}
+
+article:last-child,
+article.single {
+  border-bottom: 0;
+}
+article.draft {
+  display: none;
+}
+
+header {
+  background: #111; /* Old browsers */
+  /*background-image: url("./dark_wood.png");*/
+  color: #eee;
+  a {
+    color: #b3b3b1;
+    border-bottom: none;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    color: @bright;
+    margin-bottom: 5px;
+  }
+  .meta {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 300;
+    color: #ccc;
+    a {
+      color: @bright;
+    }
+    a:hover {
+      color: @bright;
+      border-bottom: 1px solid @bright;
+    }
+    ul {
+      border: none;
+      width: 100%;
+      position: relative;
+    }
+    li {
+      list-style: none;
+      span {
+        color: #ebebeb;
+      }
+
+    }
+  }
+  .actions {
+    text-align: right;
+  }
+}
+
+@media (max-width: 640px) {
+  article, header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  article .meta {
+    display: block;
+  }
+  article .meta ul {
+    margin-left: 0;
+  }
+  article .meta li {
+    display: inline-block;
+  }
+  article .meta li + li::before {
+    content: " | "
+  }
+}

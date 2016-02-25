@@ -4,46 +4,44 @@ This theme is a single-author fork of [Jason Schuller][]'s `simple` theme that i
 
 ## Features:
 
-* Intro uses a separately-styled <header> tag
-* Optional buttons in the intro
-* Square buttons
-* No per-post author in posts list
-* Formatting for `aside` posts (depends on benlk/dropplets/custom-posts)
+- Intro uses a separately-styled <header> tag
+- Optional buttons in the intro
+- Square buttons
+- No per-post author in posts list
+- Formatting for `aside` posts (depends on benlk/dropplets/custom-posts)
 
 ### Custom post types
 
 Post types are set in the header. Posts can have multiple post types. Currently supported are:
 
-* `draft`
-    * Hidden by Dropplets
-* `published`
-    * Square post thumbnail
-    * Supports all markdown that Dropplets supports
-* `toc`
+- `draft`
+    - Hidden by Dropplets
+- `published`
+- `toc`
 	- Depends on replacing `dropplets/includes/Markdown.php` with the classic version of PHP Markdown Extra from https://michelf.ca/projects/php-markdown/
 	- Headlines within the post should use this markup: `# Headline { #id }` 
 	- Only headlines up to `h3`/`###` will be included in the Table of Contents.
 	- The TOC doesn't do nesting in the HTML, but it could be done in the CSS.
 	- Creates a Table of Contents div at the top of the post
-* `aside`
-    * No thumbnail or decoration on post meta
-    * No post headline on front page
-    * No "Continue Reading" button on front page
-    * No way to access the post itself at all
-    * It's just one paragraph, or blockquote, or image on the front page
-    
-Post types are set by changing the post status:
+- `aside`
+    - No thumbnail or decoration on post meta
+    - No post headline on front page
+    - No "Continue Reading" button on front page
+    - No way to access the post itself at all
+    - It's just one paragraph, or blockquote, or image on the front page
+
+Post types are set by changing the post status, and can have multiple post types if your Dropplets supports it::
 
     # Post title 
     - Post author
     - Post author's twitter @
     - YYYY-MM-DD
     - category
-    - draft/published/feature/aside
-    
-### Intro buttons 
+    - draft published toc aside
 
-Buttons that go in the intro. See `custom/intro-buttons.php`. Leave the file blank after `?>` for no buttons. 
+### Intro buttons
+
+Buttons that go in the intro. See `custom/intro-buttons.php`. Leave the file blank after `?>` for no buttons.
 
 ## Version History
 
@@ -54,7 +52,9 @@ Buttons that go in the intro. See `custom/intro-buttons.php`. Leave the file bla
 
 ## Attribution and Licenses
 
-Efforts have been made to attribute code where possible. 
+Efforts have been made to attribute code where possible.
+
+`Gruntfile.js` is copied from [benlk/cwdg-talk](https://github.com/benlk/cwdg-talk) and is descended from [INN/Largo](https://github.com/INN/Largo/).
 
 `post.php` incorporates a modified version of [Alex Freeman's AutoTOC function](http://www.10stripe.com/articles/automatically-generate-table-of-contents-php.php), which was released under CC-BY-SA 3.0. You are welcome to modify this function under the terms of the [Creative Commons Attribution Share Alike 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/)
 

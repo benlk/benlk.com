@@ -1,0 +1,146 @@
+body {
+  background: @background;
+  font-size: @baseFontSize;
+  font-family: @sans;
+  line-height: @baseLineHeight;
+  color: @text;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: @orange;
+}
+
+/**
+ * Headlines
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: @headline;
+  color: @dkgray;
+  margin: 0 0 0.5em;
+}
+h1 {
+  font-size: 2.125 * @baseFontSize;
+}
+h2 {
+  font-size: 1.8 * @baseFontSize;;
+}
+h3 {
+  font-size: 1.5 * @baseFontSize;;
+}
+h4 {
+  font-size: 1.3 * @baseFontSize;;
+}
+h5 {
+  font-size: @baseFontSize;;
+}
+h6 {
+  font-size: @baseFontSize;;
+}
+*+h1, *+h, *+h3, *+h4, *+h5, *+h6 {
+  margin-top: 1em;
+}
+
+hr {
+  width: 90%;
+  margin: 1.5em auto;
+  border-style: none;
+  border-bottom: 2px solid #777;
+}
+
+/*
+ * Lists
+ */
+ul, ol {
+  margin-left: @article_vpadding;
+  margin-bottom: 0.5 * @article_vpadding;
+}
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+ul li {
+  list-style: disc;
+}
+ol li {
+  list-style: decimal;
+}
+
+/*
+ * Paragraphs
+ */
+p {
+  margin: 0 0 20px;
+  & + p {
+    text-indent: 0;
+  }
+}
+.big {
+  font-size: 1.5em;
+  sup {
+    font-size: 0.5em;
+  }
+}
+/*
+ * Links
+ */
+a {
+  text-decoration: none;
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+}
+a {
+  color: @black;
+  border-bottom-color: @orange;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  img {
+    border: none;
+  }
+  &:hover,
+  &:active {
+    color: #fc4913;
+    border-bottom-color: #fc4913;
+  }
+}
+
+/*
+ * Code
+ */
+code {
+  color: @black;
+  font-family: @mono;
+}
+
+p code {
+  outline: 1px solid @orange;
+}
+
+pre code {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  font-size: 14px;
+  position: relative;
+  &::before {
+    display: block;
+    position: absolute;
+    top: -1 * @baseLineHeight * @baseFontSize;
+    left: -15px; /* the padding on the pre containing the code */
+  }
+
+  &.html::before {
+    content: "html";
+  }
+  &.css::before {
+    content: "css";
+  }
+}
+pre {
+  white-space: pre-wrap;
+  padding: 15px;
+  margin: 0 2em 20px;
+  border: 1px dashed #bf370f;
+  border-radius: 7px
+}
+

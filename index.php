@@ -13,9 +13,9 @@ header("X-Clacks-Overhead: GNU Terry Pratchett");
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Theme Styles -->
-        <link rel="stylesheet" href="<?php echo($template_dir_url); ?>custom/custom.css">
-        <link rel="stylesheet" href="<?php echo($template_dir_url); ?>subdiv.css">
-		
+        <link rel="stylesheet" href="<?php echo($template_dir_url); ?>css/style.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu+Mono|Source+Sans+Pro:400,400italic|Oswald&subset=latin,latin-ext">
+
 		<link rel="icon" type="img/png" href="<?php echo($template_dir_url); ?>custom/favicon.png" />
 
 		<script src="jquery-1.10.2.min.js"></script>
