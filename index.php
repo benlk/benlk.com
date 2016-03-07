@@ -10,9 +10,9 @@ header("X-Clacks-Overhead: GNU Terry Pratchett");
 
 		<!--
 
-	 _	 _ _____   /
-	 |_____|   |	/
-	 |	 | __|__ .
+	       _ _____   /
+	 |_____|   |    /
+	 |     | __|__ .
 
 	Theme source can be found at https://github.com/benlk/benlk.com
 
