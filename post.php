@@ -63,7 +63,7 @@ if (strpos($post_status, "toc") !== false ) {
                 <?php if ($toc) { ?>
                 <li><a class="button tocbutton" href="#toc" title="Scroll to table of contents">&uarr;</a></li>
                 <?php } ?>
-                <li><a class="button" href="https://twitter.com/intent/tweet?text=&quot;<?php echo($post_title); ?>&quot;%20<?php echo($post_link); ?>%20via%20<?php echo($post_author_twitter); ?>" data-dnt="true">Tweet this! →</a></li>
+                <li><a class="button" href="https://twitter.com/intent/tweet?text=<?php echo(rawurlencode($post_title)); ?>%20<?php echo(rawurlencode($post_link)); ?>%20via%20<?php echo($post_author_twitter); ?>" data-dnt="true">Tweet this! →</a></li>
                 
             </ul>
         </div>
