@@ -58,8 +58,13 @@ header {
 
 @media (max-width: @break_l) {
   article, header {
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: (@article_vpadding/2);
+    padding-bottom: (@article_vpadding/2);
+  }
+  header {
+    padding-left: (@article_vpadding/2);
+    padding-right: (@article_vpadding/2);
+    box-sizing: border-box;
   }
   article .meta {
     display: block;
