@@ -46,9 +46,9 @@ if(isset($_SERVER['REQUEST_URI']) && $_SERVER['REQUEST_URI'] != "") {
     <?php } else { ?>
       <p>What were you looking for? </p>
     <?php } ?>
-    <iframe id="ddg" src="http://duckduckgo.com/search.html?site=<?php
+    <iframe id="ddg" src="//duckduckgo.com/search.html?site=<?php
                           echo $_SERVER['SERVER_NAME']; // the www.example.com part of the URL
                           ?>&prefill=Search this site&focus=yes" frameborder="0"></iframe>
     <p class="disclaimer">This search box uses <a href="https://duckduckgo.com/about">DuckDuckGo</a>, a privacy-positive search engine.</p>
-    <p><ul class="actions"><li><a class="button" href="http://<?php echo $_SERVER['SERVER_NAME']?>">To the homepage!</a></li></ul></p>
+    <p><ul class="actions"><li><a class="button" href="//<?php echo $_SERVER['SERVER_NAME']?>">To the homepage!</a></li></ul></p>
   </div>
