@@ -37,7 +37,14 @@ header("X-Clacks-Overhead: GNU Terry Pratchett");
 			} else if ( IS_SINGLE ) {
 				include("header-single.php");
 			}
+
+			// Only display pagination at top if the page is greater than 1
+			if ( $page > 1 && ( IS_HOME || isset($category) ) ) {
+				echo $pagination;
+			}
 			echo($content);
+
+			// Always display pagination at bottom if it's home or a category
 			if ( IS_HOME || isset($category) ) {
 				echo $pagination;
 			}
