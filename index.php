@@ -23,7 +23,6 @@ header("X-Clacks-Overhead: GNU Terry Pratchett");
 
 		<link rel="icon" type="img/png" href="<?php echo($template_dir_url); ?>custom/favicon.png" />
 
-		<script src="jquery-1.10.2.min.js"></script>
 		<?php echo($page_meta); ?>
 		<?php get_header(); ?>
 	</head>
