@@ -30,7 +30,6 @@ header("X-Clacks-Overhead: GNU Terry Pratchett");
 
 	<body>
 		<?php
-#			var_dump(IS_HOME) . var_dump(isset($category)) . var_dump(IS_SINGLE);
 			if ( IS_HOME ) {
 				include("header-intro.php");
 			} else if ( isset($category) ) {
@@ -39,6 +38,9 @@ header("X-Clacks-Overhead: GNU Terry Pratchett");
 				include("header-single.php");
 			}
 			echo($content);
+			if ( IS_HOME || isset($category) ) {
+				echo $pagination;
+			}
 			get_footer(); 
 		?>
 	</body>
