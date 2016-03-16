@@ -1,4 +1,3 @@
-p
 ## Attribution and Licenses
 
 Efforts have been made to attribute code where possible.
