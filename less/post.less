@@ -82,9 +82,22 @@ embed {
 .sidenote, .marginnote {
   float: left;
   clear: left;
-  margin-left: -190px;  /* see subdiv.css, this should be the width of one column */
-  width: 160px;
+  margin-left: -420px;  /* see subdiv.css, this should be the width of one column */
+  width: 390px;
   color: @mgray;
+
+  @media ( max-width: 1455px ) {
+    margin-left: ~"calc( -1/2 * ( 100vw - 815px ) - 100px )";
+    width: ~"calc( 1/2 * (100vw - 815px ) + 80px )";
+  }
+  @media ( max-width: @break_xxl ) {
+    margin-left: ~"calc( -1/2 * ( 100vw - 680px ) - 80px )";
+    width: ~"calc( 1/2 * (100vw - 680px ) + 60px )";
+  }
+  @media ( max-width: @break_xl ) {
+    margin-left: ~"calc( -1/2 * ( 100vw - 545px ) - 60px )";
+    width: ~"calc( 1/2 * (100vw - 545px ) + 40px )";
+  }
 }
 body {
   counter-reset: sidenote-counter;
