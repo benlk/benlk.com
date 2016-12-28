@@ -8,7 +8,7 @@ body {
 }
 
 ::selection {
-  background-color: @orange;
+  background-color: @brand;
 }
 
 /**
@@ -93,8 +93,8 @@ a {
   -webkit-transition-duration: 0.2s;
 }
 a {
-  color: @black;
-  border-bottom-color: @orange;
+  color: @blue;
+  border-bottom-color: @blue;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   img {
@@ -102,8 +102,17 @@ a {
   }
   &:hover,
   &:active {
-    color: #fc4913;
-    border-bottom-color: #fc4913;
+    color: @brand;
+    border-bottom-color: @brand;
+  }
+}
+.post p a {
+  &:visited {
+    color: @black;
+    border-bottom-color: @linkcolorvisited;
+  }
+  &:visited:hover {
+    color: @linkcolorvisited;
   }
 }
 
@@ -117,7 +126,7 @@ code {
 
 li code,
 p code {
-  outline: 1px solid @orange;
+  outline: 1px solid @brand;
 }
 
 pre code {
