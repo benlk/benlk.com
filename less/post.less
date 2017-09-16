@@ -41,10 +41,34 @@
   }
 }
 
+figure,
 img,
 object,
 embed {
   max-width: 100%;
+}
+
+figure {
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  border: 1em solid @orange;
+    padding: 1em;
+
+  img {
+    display: table-cell;
+    width: auto;
+    margin: 0 auto;
+  }
+  figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    border-left: 1em solid @orange;
+    border-bottom: 1em solid @orange;
+    border-right: 1em solid @orange;
+    padding: 1em;
+  }
 }
 
 /*
