@@ -21,6 +21,12 @@ header("X-Clacks-Overhead: GNU Terry Pratchett");
 		<link rel="stylesheet" href="<?php echo($template_dir_url); ?>css/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@benlkeith" />
+		<meta name="twitter:title" content="<?php echo $post_title; ?>" />
+		<meta name="twitter:description" content="A blog post on The Writing Hat." />
+
+
 		<link rel="icon" type="img/png" href="<?php echo($template_dir_url); ?>custom/favicon.png" />
 
 		<script src="jquery-1.10.2.min.js"></script>
