@@ -90,3 +90,22 @@ header {
     content: " | "
   }
 }
+@media (min-width: @break_l) {
+  article.single .one-quarter {
+    height: 100%;
+  }
+  article.single .byline {
+    margin-left: 0;
+    transform: rotate( 90deg );
+    float: none;
+    width: auto;
+    text-align: left;
+
+    li {
+      display: inline-block;
+    }
+    li + li::before {
+      content: " | ";
+    }
+  }
+}

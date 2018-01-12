@@ -46,8 +46,7 @@ if (strpos($post_status, "toc") !== false ) {
 <article class="single <?php echo($post_status); ?>">
     <div class="row">
         <div class="one-quarter meta">
-
-            <ul>
+            <ul class="byline">
                 <li>Written by <a href="https://twitter.com/<?php echo($post_author_twitter); ?>"><?php echo($post_author); ?></a></li>
                 <li><?php echo($published_date); ?></li>
                 <li>Category: <a href="<?php echo($post_category_link); ?>"><?php echo($post_category); ?></a></li>
