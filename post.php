@@ -8,9 +8,10 @@ if (strpos($post_status, "toc") !== false ) {
 	 * Based on AutoTOC function written by Alex Freeman
 	 * Released under CC-by-sa 3.0 license
 	 * http://www.10stripe.com/articles/automatically-generate-table-of-contents-php.php  
-	 *  This only works if:
-	 	* you replace your standard dropplets/includes/Markdown.php with the classic version of PHP Markdown Extra from https://michelf.ca/projects/php-markdown/
-	 	* Headlines are formatted with an ID: # Headline {#id}
+	 *
+	 * This only works if:
+	 * - you replace your standard dropplets/includes/Markdown.php with the classic version of PHP Markdown Extra from https://michelf.ca/projects/php-markdown/
+	 * - Headlines are formatted with an ID: # Headline {#id}
 	 */
 	
 	function TableOfContents($html_string, $depth)
@@ -46,14 +47,12 @@ if (strpos($post_status, "toc") !== false ) {
 <article class="single <?php echo($post_status); ?>">
     <div class="row">
         <div class="one-quarter meta">
-            <ul class="byline">
-                <li>Written by <a href="https://twitter.com/<?php echo($post_author_twitter); ?>"><?php echo($post_author); ?></a></li>
-                <li><?php echo($published_date); ?></li>
-                <li>Category: <a href="<?php echo($post_category_link); ?>"><?php echo($post_category); ?></a></li>
-            </ul>
         </div>
 
         <div class="three-quarters post">
+            <ul class="byline">
+                <li><?php echo($published_date); ?></li>
+            </ul>
             <?php echo($toc); ?>
             <?php echo($post_content); ?>
 

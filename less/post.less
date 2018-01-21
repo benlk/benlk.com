@@ -1,5 +1,6 @@
 .post {
   p,
+  dl,
   ul,
   ol {
     max-width: 100%;
@@ -25,13 +26,10 @@
   text-align: center;
 }
 
-.post .byline {
-}
 .byline {
-  float: right;
   border: none;
-  margin-left: 1em;
   text-align: right;
+  display: block;
   a,
   a:hover{
     color: @dkgray;
@@ -106,21 +104,34 @@ figure {
 .sidenote, .marginnote {
   float: left;
   clear: left;
-  margin-left: -420px;  /* see subdiv.css, this should be the width of one column */
   width: 390px;
   color: @mgray;
 
   @media ( max-width: 1455px ) {
-    margin-left: ~"calc( -1/2 * ( 100vw - 815px ) - 100px )";
     width: ~"calc( 1/2 * (100vw - 815px ) + 80px )";
   }
   @media ( max-width: @break_xxl ) {
-    margin-left: ~"calc( -1/2 * ( 100vw - 680px ) - 80px )";
     width: ~"calc( 1/2 * (100vw - 680px ) + 60px )";
   }
   @media ( max-width: @break_xl ) {
-    margin-left: ~"calc( -1/2 * ( 100vw - 545px ) - 60px )";
     width: ~"calc( 1/2 * (100vw - 545px ) + 40px )";
+  }
+}
+.single .byline, .sidenote, .marginnote {
+  @media ( min-width: 1456px ) {
+    margin-left: -420px;  /* see subdiv.css, this should be the width of one column */
+  }
+  @media ( max-width: 1455px ) {
+    margin-left: ~"calc( -1/2 * ( 100vw - 815px ) - 100px )";
+  }
+  @media ( max-width: @break_xxl ) {
+    margin-left: ~"calc( -1/2 * ( 100vw - 680px ) - 80px )";
+  }
+  @media ( max-width: @break_xl ) {
+    margin-left: ~"calc( -1/2 * ( 100vw - 545px ) - 60px )";
+  }
+  @media ( max-width: @break_l ) {
+    margin-left: 0;
   }
 }
 body {
