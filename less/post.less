@@ -1,3 +1,42 @@
+@supports ( display: grid ) and (writing-mode: vertical-lr) {
+  header.intro.single {
+
+    padding: 5vw;
+    @media (min-width: 641px)  {
+      padding: 40px;
+    }
+    box-sizing: border-box;
+    display: grid;
+    text-align: left;
+    grid-template-columns: auto 2em;
+    grid-template-rows: 2em auto;
+    grid-template-areas:
+      " home date "
+      " title date ";
+
+    time {
+      grid-area: date;
+
+      writing-mode: vertical-lr;
+      white-space: nowrap;
+      display: inline-block;
+      overflow: visible;
+
+      vertical-align: top;
+      transform-origin: 1em 50%;
+    }
+    a {
+      grid-area: home;
+    }
+    h1 {
+      grid-area: title;
+      margin-bottom: 0;
+      vertical-align: bottom;
+      align-self: end;
+    }
+  }
+}
+
 article .post {
   max-width: 40em;
 
@@ -24,20 +63,9 @@ article .post {
   }
 }
 
-.intro.single {
-  text-align: center;
-}
-
-.byline {
-  border: none;
-  text-align: right;
-  display: block;
-  a,
-  a:hover{
-    color: @dkgray;
-  }
-  li {
-    list-style: none;
+@supports not ( display: grid ) and (writing-mode: vertical-lr) {
+  .intro.single {
+    text-align: center;
   }
 }
 
@@ -119,7 +147,7 @@ figure {
     width: ~"calc( 1/2 * (100vw - 545px ) + 40px )";
   }
 }
-.single .byline, .sidenote, .marginnote {
+.sidenote, .marginnote {
   @media ( min-width: 1456px ) {
     margin-left: -420px;  /* see subdiv.css, this should be the width of one column */
   }

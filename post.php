@@ -48,11 +48,7 @@ if (strpos($post_status, "toc") !== false ) {
     <div class="row">
         <div class="one-quarter meta">
         </div>
-
         <div class="three-quarters post">
-            <ul class="byline">
-                <li><?php echo($published_date); ?></li>
-            </ul>
             <?php echo($toc); ?>
             <?php echo($post_content); ?>
 
