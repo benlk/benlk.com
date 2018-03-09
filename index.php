@@ -34,8 +34,6 @@ header("X-Clacks-Overhead: GNU Terry Pratchett");
 				include("header-intro.php");
 			} else if ( isset($category) ) {
 				include("header-category.php");
-			} else if ( IS_SINGLE ) {
-				include("header-single.php");
 			}
 
 			// Only display pagination at top if the page is greater than 1

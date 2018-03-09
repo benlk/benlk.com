@@ -45,6 +45,7 @@ if (strpos($post_status, "toc") !== false ) {
 }
 ?>
 <article class="single <?php echo($post_status); ?>">
+	<?php include( 'header-single.php' ); ?>
     <div class="row">
         <div class="one-quarter meta">
         </div>
