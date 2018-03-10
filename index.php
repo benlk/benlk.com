@@ -48,5 +48,9 @@ header("X-Clacks-Overhead: GNU Terry Pratchett");
 			}
 			get_footer(); 
 		?>
+		<script type="text/javascript" src="/templates/benlk.com/js/text-balancer/text-balancer.standalone.js"></script>
+		<script type="text/javascript">
+		textBalancer.initialize('h1, h2, h3');
+		</script>
 	</body>
 </html>

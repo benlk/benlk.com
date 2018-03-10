@@ -1,0 +1,3 @@
+[submodule "js/text-balancer"]
+	path = js/text-balancer
+	url = https://github.com/NYTimes/text-balancer.git
