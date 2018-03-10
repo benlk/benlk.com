@@ -52,5 +52,16 @@ header("X-Clacks-Overhead: GNU Terry Pratchett");
 		<script type="text/javascript">
 		textBalancer.initialize('h1, h2, h3');
 		</script>
+
+		<script>
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			ga('create', 'UA-59485687-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+		<footer>
+			<p>This site uses Google Analytics to satisfy the author's curiosity about browser viewport sizes. If you don't want to be tracked, <abbr title="Electronic Frontier Foundation">EFF</abbr>'s <a href="https://www.eff.org/privacybadger">Privacy Badger</a> and/or gorhill's <a href="https://github.com/gorhill/uBlock">uBlock</a> browser extensions are recommended as methods to prevent tracking on all sites.</p>
+		</footer>
 	</body>
 </html>
